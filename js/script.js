@@ -1,4 +1,3 @@
-// Navbar Fixed
 window.onscroll = function () {
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
@@ -15,7 +14,6 @@ window.onscroll = function () {
   }
 };
 
-// Hamburger
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
 
@@ -24,7 +22,6 @@ hamburger.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");
 });
 
-// Klik di luar hamburger
 window.addEventListener("click", function (e) {
   if (e.target != hamburger && e.target != navMenu) {
     hamburger.classList.remove("hamburger-active");
